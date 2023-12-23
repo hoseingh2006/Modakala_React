@@ -1,0 +1,123 @@
+.slider-shop {
+    direction: ltr;
+}
+
+.product-box {
+    background-color: var(--withe);
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.product-header {
+    border-bottom: solid 4px var(--color-gray-3);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.product-header::after {
+    content: "";
+    background-color: var(--color-pink-1);
+    width: 150px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -3px;
+    right: 0px;
+}
+
+.product-header a {
+    text-decoration: none;
+    color: var(--color-pink-1);
+}
+
+.product-header p {
+    color: var(--color-gray-2);
+    font-weight: 700;
+}
+
+.product-content {
+    padding: 10px 0;
+    position: relative;
+}
+
+.slider-shop-box {
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    direction: rtl;
+    height: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.slider-shop-box:hover {
+    border: 1px solid var(--color-gray-3);
+}
+
+.slider-shop-box p {
+    color: var(--color-gray-2);
+}
+
+.slider-shop-box span {
+    color: var(--color-pink-1);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.slider-shop-box .last-price {
+    color: var(--color-gray-3);
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+
+.slider-shop-box .last-price::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: var(--color-gray-3);
+    transform: translate(-50%, -50%);
+}
+
+.slider-shop .owl-nav button.owl-prev,
+.slider-shop .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    transform: translateY(-50%);
+    background-color: var(--withe);
+    width: 50px;
+    height: 100px;
+
+
+
+}
+
+.slider-shop .owl-nav button.owl-prev {
+    left: -5px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.slider-shop .owl-nav button.owl-next {
+    right: -5px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: var(--withe);
+    color: var(--black);
+}

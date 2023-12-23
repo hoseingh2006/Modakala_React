@@ -1,0 +1,127 @@
+.footer {
+    background-color: var(--color-gray-3);
+    appearance: none;
+    padding: 20px;
+
+}
+
+.footer-search {
+    width: 550px;
+    height: 58px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    padding: 0 20px;
+    font-family: yekan;
+    outline: none;
+}
+
+.text-percent {
+    font-size: 14px;
+    color: var(--color-gray-2);
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+}
+
+.footer-box-app {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-box-app img {
+    width: 170px;
+}
+
+.footer-search-box {
+    position: relative;
+}
+
+.icon-footer-search {
+    position: absolute;
+    top: 6%;
+    left: 5px;
+    background-color: var(--color-gray-1);
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--withe);
+    transition: all 0.2s;
+}
+
+.icon-footer-search:hover {
+    background-color: var(--color-pink-1);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+}
+
+.footer-phone,.footer-khadamat,.footer-link,.footer-namad {
+    border-left:1px solid rgba(0, 0, 0, 0.103) ;
+    padding:0 10px 0 20px ;
+    align-items: flex-start
+}
+
+.footer-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-phone p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer-info {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-khadamat {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-khadamat a {
+    text-decoration: none;
+    color: var(--color-gray-2);
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-link a {
+    text-decoration: none;
+    color: var(--color-gray-2);
+}
+
+
+.footer-namad {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-namad img {
+    width: 110px;
+}

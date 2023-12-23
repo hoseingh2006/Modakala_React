@@ -1,0 +1,74 @@
+.stroke ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.stroke ul li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--color-gray-2);
+}
+
+.stroke ul li i {
+    font-size: 18px;
+
+}
+
+.stroke ul li:first-child a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--black);
+
+}
+
+.stroke ul li {
+    position: relative;
+
+}
+
+.stroke ul li::after,
+.stroke ul li::before {
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    content: "";
+    width: 0%;
+    height: 2px;
+    
+    background-color: var(--color-pink-1);
+    transition: all 0.3s;
+
+}
+
+.stroke ul li::after {
+    transform: translate(-50%, 0);
+}
+
+.stroke ul li::before {
+    transform: translate(50%, 0);
+}
+
+.stroke ul li:hover::after {
+    width: 102%;
+
+}
+
+.stroke ul li::before {
+    transform: translate(50%, 0);
+}
+
+.stroke ul li:hover::before {
+    width: 100%;
+    left: -50%;
+
+}
+
+.hr-vertical {
+    width: 2px;
+    height: 25px;
+    background-color: var(--color-gray-3);
+}
